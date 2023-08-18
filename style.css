@@ -1,0 +1,177 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #690d0d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+.logo img {
+  width: auto; /* Allow the width to adjust automatically */
+  height: 10cqh;
+  position: relative; /* Set the desired height */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("./img/tugu.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 10rem 0;
+  background-color: bisque;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Destinations Section */
+.destinations {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.destinations h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.destinations h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.destination {
+  margin-bottom: 2.5rem;
+}
+
+.destination img {
+  width: 100%;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Gallery Section */
+.gallery {
+  background-color: #f4f4f4;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* ... Existing CSS ... */
+
+/* Gallery Section */
+.gallery {
+  background-color: #f4f4f4;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  
+}
+
+.photo {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* ... Existing CSS ... */
+
+/* Slider Section */
+.slider {
+  position: inherit;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 50%;
+  display: flex;
+   
+}
+
+.slide img {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
